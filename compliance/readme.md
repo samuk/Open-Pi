@@ -3,6 +3,7 @@
 -  2014/30/EU 	EMC 	Electromagnetic compatibility - Applies and will have lab test done
 -  2014/35/EU 	LVD 	Low voltage - Does not apply
 -  2014/53/EU 	RED 	Radio equipment - Does not apply
+  
   [ref](https://ce-marking.help/home#)
 
 # RoHS II
