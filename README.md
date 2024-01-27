@@ -2,7 +2,7 @@
 
 ![img](https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/Engineering-sample.png)
 
-Features
+# Features
 
    - Gigabit Ethernet port
   -  Real Time Clock with 3022 coin cell battery holder 
@@ -21,7 +21,7 @@ Features
    - 4-pin “Berg” power connector providing 5V and 12V
    - 2-pin power connector providing 3.3V
    
-The CM4 Development board is ideal for various applications, Including:
+# Ideal for various applications, Including:
 
 -    Network attached mass storage (NAS)
 -    Media Centers
@@ -29,6 +29,25 @@ The CM4 Development board is ideal for various applications, Including:
 -    IOT gateway
 -    Commercial applications
 -    Smart home management
+
+# Compatability
+- Compatible with Pi hats including [CAN/ RS485 hats](https://wiki.kamamilabs.com/index.php/KAmodRPi_CAN_RS485_HAT#Description)
+<img src="https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/can-hat.png" alt="can hat" style="width:400px;"> 
+
+
+# Enclosures
+
+[DIN rail mount](https://www.fischerelektronik.com/web_fischer/en_GB/cases/M1.07/Miniature%20aluminium%20casing/$catalogue/fischerData/PR/AKG105_034KL_/search.xhtml)  option
+
+![DIN](https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/din.png)
+
+[Premium Aluminum cases](https://www.fischerelektronik.com/web_fischer/en_GB/cases/M1.07/Miniature%20aluminium%20casing/$catalogue/fischerData/PR/AKG105_046_/search.xhtml)
+
+<img src="https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/premium.png" alt="can hat" style="width:400px;"> 
+
+[Affordable Aluminum cases](https://www.aliexpress.com/item/1005005903163639.html)
+
+<img src="https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/afford.webp" alt="can hat" style="width:400px;"> 
 
 
 This project will be a derivative of [Johanns carrier board](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/540) the intention is to review that board and release it under a [CERN-OHL-P licence](https://ohwr.org/cern_ohl_p_v2.txt)
