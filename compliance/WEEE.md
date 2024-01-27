@@ -23,15 +23,15 @@ advice or to be legally binding on xxxxx or any third party.
 xxxxx is committed to a safe and healthy environment and has been working
 diligently to ensure its compliance with WEEE legislation. xxxxx and all products
 sold by xxxxx will comply with WEEE legislation by:
-  • Designing its equipment and packaging with consideration to future dismantling,
+-  Designing its equipment and packaging with consideration to future dismantling,
 recovery and recycling requirements;
-  • Marking its products with the required symbols and informing users of their
+- Marking its products with the required symbols and informing users of their
 obligation to separate WEEE from general waste and dispose of it through the
 provided recycling systems;
-  • Reporting information as required by each member state;
-  • Facilitating the collection, recycling and disposal of WEEE as defined by the
+- Reporting information as required by each member state;
+- Facilitating the collection, recycling and disposal of WEEE as defined by the
 directive and applicable member state regulation;
-  • Providing information to treatment centers according to the requirements defined
+- Providing information to treatment centers according to the requirements defined
 in the local regulation.
 
 xxxxx continues to work with WEEE consortia (VERE Mandate Reference:
