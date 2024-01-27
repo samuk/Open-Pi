@@ -2,6 +2,9 @@
 
 ![img](https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/Engineering-sample.png)
 
+Attribution: This project will be a derivative of [Johanns carrier board](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/540) the intention is to review that board and release it under a [CERN-OHL-P licence](https://ohwr.org/cern_ohl_p_v2.txt)
+
+
 # Features
 
    - Gigabit Ethernet port
@@ -50,4 +53,3 @@
 <img src="https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/afford.webp" alt="can hat" style="width:400px;"> 
 
 
-This project will be a derivative of [Johanns carrier board](https://github.com/geerlingguy/raspberry-pi-pcie-devices/issues/540) the intention is to review that board and release it under a [CERN-OHL-P licence](https://ohwr.org/cern_ohl_p_v2.txt)
