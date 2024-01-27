@@ -37,9 +37,9 @@
 
 # Enclosures
 
-[DIN rail mount](https://www.fischerelektronik.com/web_fischer/en_GB/cases/M1.07/Miniature%20aluminium%20casing/$catalogue/fischerData/PR/AKG105_034KL_/search.xhtml)  option
+[DIN rail mounts](https://www.fischerelektronik.de/web_fischer/en_GB/cases/M1.12/Accessories%20for%20cases/$catalogue/fischerData/PR/RKL105_042/index.xhtml) 
 
-![DIN](https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/din.png)
+![DIN](https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/din.jpg)
 
 [Premium Aluminum cases](https://www.fischerelektronik.com/web_fischer/en_GB/cases/M1.07/Miniature%20aluminium%20casing/$catalogue/fischerData/PR/AKG105_046_/search.xhtml)
 
