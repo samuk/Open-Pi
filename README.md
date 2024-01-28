@@ -26,12 +26,14 @@ Attribution: This project will be a derivative of [Johanns carrier board](https:
    
 # Ideal for various applications, Including:
 
--    Network attached mass storage (NAS)
--    Media Centers
--    Edge AI
--    IOT gateway
--    Commercial applications
--    Smart home management
+-    [IOT gateway](https://github.com/balena-os)
+-    [Commercial/ RT applications](https://github.com/torizon/meta-toradex-torizon)
+-    [Edge AI](https://github.com/huginn/huginn/blob/master/doc/docker/install.md)
+-    [Robotics](https://github.com/linorobot/linorobot2#linorobot2)
+-    [Environmental regulation & control](https://github.com/kizniche/Mycodo#mycodo)
+-    [Network attached mass storage (NAS)](https://www.openmediavault.org/features.html)
+-    [Media Centers](https://osmc.tv/)
+-    [Smart home management](https://www.home-assistant.io/)
 
 # Compatability
 - Compatible with Pi hats including [CAN/ RS485 hats](https://wiki.kamamilabs.com/index.php/KAmodRPi_CAN_RS485_HAT#Description)
