@@ -44,7 +44,7 @@ USED TO CREATE Open Pi AND Open Pi plus. THEY ARE CONSIDERED SUITABLE ONLY FOR, 
 - DISCLAIMER......................................................................................................
 
  #### CHAPTER 1: OVERVIEW
-- 1. Introduction to the chapter..................................................................................
+- 1.0 Introduction to the chapter..................................................................................
 - 1.1 Features....................................................................................................
 - 1.2 Target market and purpose of the board......................................................................
 - 1.3 Board variants..............................................................................................
@@ -52,7 +52,7 @@ USED TO CREATE Open Pi AND Open Pi plus. THEY ARE CONSIDERED SUITABLE ONLY FOR, 
 - 1.5 Document organization.......................................................................................
 
 ### CHAPTER 2: SETTING UP THE Open PiBOARD
-- 2. Introduction to the chapter..................................................................................
+- 2.0 Introduction to the chapter..................................................................................
 - 2.1 Electrostatic and electrical polarity warning...............................................................
 - 2.2 Requirements................................................................................................
 - 2.3 Powering the board..........................................................................................
@@ -71,23 +71,23 @@ USED TO CREATE Open Pi AND Open Pi plus. THEY ARE CONSIDERED SUITABLE ONLY FOR, 
 - 2.10 Software support...........................................................................................
 
 ### CHAPTER 3: Open Pi BOARD DESCRIPTION
-- 3. Introduction to the chapter..................................................................................
+- 3.0 Introduction to the chapter..................................................................................
 - 3.1 Layout (top view)...........................................................................................
 - 3.2 Layout (bottom view)........................................................................................
 
 ### CHAPTER 4: THE ALLWINNER CM4 compatible modules
-- 4. Introduction to the chapter...................................................................................
+- 4.0 Introduction to the chapter...................................................................................
 - 4.1 The processor................................................................................................
 - 4.2 Block diagram...............................................................................................
 
 ### CHAPTER 5: CONTROL CIRCUITY
-- 5. Introduction to the chapter...................................................................................
+- 5.0 Introduction to the chapter...................................................................................
 - 5.1 Reset........................................................................................................
 - 5.2 Clocks.......................................................................................................
 - 5.3 Power supply circuit.........................................................................................
 
 ### CHAPTER 6: CONNECTORS AND PINOUT
-- 6. Introduction to the chapter..................................................................................
+- 6.0 Introduction to the chapter..................................................................................
 - 6.1 UART0 interface.............................................................................................
 - 6.2 MicroSD card connector.........................................................................................
 - 6.2.1 SD/MMC1 slot.................................................................................................
@@ -103,12 +103,12 @@ USED TO CREATE Open Pi AND Open Pi plus. THEY ARE CONSIDERED SUITABLE ONLY FOR, 
 - 6.12 Additional hardware components..................................................................................
 
 ### CHAPTER 7: SCHEMATICS
-- 7. Introduction to the chapter.......................................................................................
+- 7.0 Introduction to the chapter.......................................................................................
 - 7.1 Kicad schematic..................................................................................................
 - 7.2 Physical dimensions...............................................................................................
 
 ### CHAPTER 8: REVISION HISTORY AND SUPPORT
-- 8. Introduction to the chapter.........................................................................................
+- 8.0 Introduction to the chapter.........................................................................................
 - 8.1 Document revision..................................................................................................
 - 8.2 Board revision.....................................................................................................
 - 8.3 Useful web links and purchase codes...............................................................................
@@ -138,7 +138,6 @@ The board has the following set of features:
 • GPIO LED
 • 12V/ 5V input power supply, noise immune design
 • Power LED
-•
 • 4 mount holes
 • PCB dimensions:  ~ (98×98) mm
 
@@ -202,6 +201,7 @@ In rare cases different polarity might cause hardware damage to the board.
 ## 2.2 Requirements
 In order to set up the Open Pi optimally one or more additional items may be used.
 They might be generally placed in three categories:
+
 Required – items that are needed in order to achieve minimum functionality;
 Recommended – items that is good to have in order to be able to interact with the most important
 of the features of the board;
@@ -210,26 +210,24 @@ Additional – items that provide access to additional features or expand the fe
 Required items:
 - A CM4 compatible compute module
 - USB type A to USB mini cable – to connect to a personal computer; used for powering the board
-and uploading new Android image to the NAND memory (if your board has 4GB NAND), can also
-be used to access the Linux of the board
+and uploading 
 - Input device – either a mouse/keyboard or touchscreen LCD
 - Output device – either HDMI cable + native HDMI monitor/screen/projector; or USB-SERIAL-
 CABLE-F + personal computer (for Linux and/or Android debugging)
-- SD card with compatible image – if you have the board version with NO additional NAND
-memory you will need it to use one of the images available.
+- SD card with compatible Linux image .
 
 Recommended items:
 - External USB hub – to split the USB_HOST mounted on the board; you need that to connect more
 USB devices
-- External power supply unit – 5V DC, 5W required – for optimal power
+- External power supply unit – 12V DC, 5W required – for optimal power
 - Open Pi-enclosure – an aesthetic box specially made for the board that protects it from
 dust and accidental short-circuits
-- Small heatsink for the processor – during long video playbacks the Open Pi processor might heat up
+- Heatsink or fan for the processor – during long video playbacks the Open Pi processor might heat up
 - External M.2 hard disk drive (proper cables sold separately)
 - Ethernet cable for wired Ethernet
   
 Important note on requirements:
-The board works with M.2 disks that can be powered by 5V source from the board! 
+The board works with M.2 disks 
 It is a very good idea to have a USB-SERIAL-CABLE or similar cable since it allows you to:
 1. Change display output settings for Debian easily
 2. Debug the board via any personal computer even if there are problems with the video output
@@ -238,14 +236,16 @@ Some of the above-suggested items can be purchased by xxxx , for instance:
 
 
 ## 2.3 Powering the board
-There are three possible ways of powering Open Pi – via external supply providing
-5V DC at the power jack, from 5V USB port via USB_OTG connector . Note that the board might consume up to 650mA of current at 5V when there
+There are two possible ways of powering Open Pi – via external supply providing
+12V DC at the power jack, from 5V USB port via USB_OTG connector . 
+
+Note that the board might consume up to 650mA of current at 5V when there
 are no peripherals connected to the USB hosts. Make sure your power supply is able to provide at
-least 2A before. Depending on your preferred way of powering you might need additional hardware.
+least 2A. Depending on your preferred way of powering you might need additional hardware.
 Important: Not all USB ports would be able to provide enough power for the board. Try using
 another USB port/USB hub or a cable of higher quality.
 
-If you have an LCD display connected to the board or then the USB will
+If you have an LCD display or other peripherals connected to the board or then the USB will
 NOT be sufficient source of power.
 The preferred way of powering the board is via the PWR jack with 12V DC. This would make the
 board fully powered and able to power all the peripherals connected to it.
@@ -266,7 +266,7 @@ than others. This is perfectly normal for some chips – for instance – voltag
 processor.
 
 ## 2.4 Button functions
-The below three buttons usually are supported under both Android and Debian:
+The below buttons are usually are supported under Linux
 PWR – used to perform software turn off, software turn on; used to turn on board when powered by
 battery – has to be held down for at least 5 seconds to perform each action
 RESET – used for hardware reset of the board
@@ -274,17 +274,17 @@ RECOVERY – used to wake up the board from sleep
 It is recommended to always make a soft “turn off” of the board. If that is not possible then please
 hold PWR button down for a few seconds to “turn off the board”. Then you are free to remove the
 power supply. If you disconnect the power supply (either the USB, the battery or the power jack)
-before turning off the board you may corrupt your SD card. If you have placed NAND memory you
-can corrupt the image on the NAND memory.
+before turning off the board you may corrupt your SD card or M.2 Drive.
 
 ## 2.5 Interacting with the board
 There are four typical ways to interact with Open Pi:
 
-- a personal computer or another board via UART0 and a serial debug cable
 - an HDMI monitor via the HDMI connector and an HDMI cable
 - a personal computer or another board via the mini USB connector and a mini USB cable, using
 SSH protocol
 - via Ethernet via Ethernet connector and LAN cable, using SSH protocol
+-  a personal computer or another board via UART0 and a serial debug cable
+
   
 More details on each of the connections might be found in the consequent sub-chapters.
 Note that not all interface options are available for all images.
@@ -294,12 +294,12 @@ possible to corrupt the output settings over those interfaces and, thus, lose th
 
 ## 2.5.1 Serial connection at UART0
 The default and recommended way to communicate with the board is using the serial connection
-available at UART0 connector. You would probably need an USB<->SERIAL cable for such a
+available at UART0 pins on the 40pin header. You would probably need an USB<->SERIAL cable for such a
 connection. Even if you intend to use HDMI or LCD it is a good idea to have it as a basis – the
 video output is not always reliable and if you set wrong display settings you would be unable to
 recover the software without an alternative connection.
 
-We distribute a ready-to-use cable. Even if you already have such a cable or you decide to purchase
+Olimex Ltd distribute a ready-to-use cable. Even if you already have such a cable or you decide to purchase
 it elsewhere it is advisable to check this product page for a reference: Product page
 If you decide to make your own cable you would need to consider that the levels at board's UART0
 are in CMOS level (3.3V) and you would need a convertor to bring them to the TTL level of your
@@ -361,56 +361,7 @@ need to apply software changes to the Linux image.
 
 For Linux Distributions you would need to execute a shell script to be able to change the resolution. It is
 very good idea to use a serial cable for connection to the board from a personal computer since in
-this case you are dependent on a video resolution (a cable like USB-SERIAL-CABLE-F). When the
-board boots type:
-./change_display*
-or
-./change_display_A20_Open Pi.sh
-Then the main menu of the video configuration script shows up and you can select the desired
-interface (LCD, HDMI or VGA):
-The supported resolutions are listed below.
-For LCD:
-1. 4.3" (480×272)
-2. 7" (800×480)
-3. 10" (1024×600)
-For HDMI:
-0. 480i
-1. 576i
-2. 480p
-3. 576p
-4. 720p50
-5. 720p60
-6. 1080i50
-7. 1080i60
-8. 1080p24
-9. 1080p50
-10. 1080p60
-11. 
-For VGA: (please note that there is no VGA connector and you might need to install additional
-hardware - more instructions on the VGA signals might be found in the chapter 6):
-0. 1680×1050
-1. 1440×900
-2. 1360×768
-3. 1280×1024
-4. 1024×768
-5. 800×600
-6. 640×480
-7. 1920×1080
-8. 1280×720
-Chose the resolution that suits you and reboot the board.
-If you decide to edit the configurations yourself the easiest way would be to do it on the board. This
-can be done offline too (manipulating the image located on the microSD card via a microSD card
-reader).
-The tools for script.bin changing are located in /opt/sunxi-tools directory:
-#cd /opt/sunxi-tools
-#./chscr.sh
-This will convert script.bin file from sdcard to script.fex file and the file will be opened using nano
-editor. Now you can change the board modules and parameters, save the changes ("CTRL"+"X";
-confirm with "Y") and exit ("CTRL"+"X" again) from nano editor.
-#./wrscr.sh
-this will convert script.fex to script.bin and the script.bin file will be written to the microSD card.
-reboot
-Reboot the board and the new settings would be applied.
+this case you are dependent on a video resolution (a cable like USB-SERIAL-CABLE-F).
 Alternatively, you can do the changes on the microSD card off the board. You would need to
 remove the microSD card and explore it in a microSD card reader. You would need to edit the
 configuration file script.bin and edit the settings inside. This file is usually located in Script.bin can't
@@ -424,12 +375,8 @@ http://linux-sunxi.org/Fex_Guide
 
 ## 2.7 Connecting and calibrating a display
 One of the ways to interact with the board is via an external display (with or without touchscreen
-component). If you want to use a display for video output from the Open Pi board the best way is to
-use the LCD_CON row of pins. The step between the pins of the connector is the smaller one – only
-0.05'' (compared to 0.1'' of bigger boards).
-Newer displays made by xxxx  have both 0.1'' and 0.05'' step connectors. Going for an LCD
-output you would also need need and a cable to attach the display to the board. The cable is sold
-separately.
+component). If you want to use a LCD display for video output from the Open Pi board the best way is to
+use the 40 pin header. 
 
 ## 2.7.2 Debian calibration
 The command that allows calibrating in Debian Linux is:
@@ -454,6 +401,7 @@ All voltages are measured against ground (GND).
 If the input signal is to high, you will at least destroy the port!
 The algorithms for writing a value to a GPIO port and reading such a value are pretty similar. The
 usage of GPIO ports follows the algorithm (we would use GPIO #49 for demonstration purposes):
+
 1. Export GPIO 49:
 echo 49 > /sys/class/gpio/export
 Note that you can export GPIOs in range with:
@@ -543,7 +491,7 @@ peripherals are presented. Notes regarding the interfaces are given.
 The UART0 interface might be used for serial communication between the board and a personal
 computer by default. In case of video output problem a cable might provide needed feedback and
 greatly reduce the efforts needed to repair the board or to adjust the software setting.
-Note that by default only UART0 is defined as a port suitable for serial debug. You can use our
+Note that by default only UART0 is defined as a port suitable for serial debug. You can use a Olimex
 USB-SERIAL-CABLE-F for debugging.
 Consider table below when connecting the USB-SERIAL-CABLE-F according to the wire color
 code. The RX line of the cable (GREEN wire) should go to TX line of the target board; the TX line
@@ -561,19 +509,19 @@ The board works with micro SDHC cards up to 32GB of storage.
 As a general precaution be careful with the SD cards you purchase. There is a big percentage of
 fake cards due to the low effort required to counterfeit popular brands and the big demand for SD
 cards worldwide. When in doubt – try the same operation with another card from another brand.
-xxxx  sells microSD cards with Linux or Android images, that have been tested – please refer to
+xxxx  may in the future sell microSD cards with Linux images, that have been tested – please refer to
 chapter “2.2 Requirements”. Of course, if you already have a large enough microSD card you can
-download the official Linux images. When removing the card, please make sure that you release it from the connector by pushing and
+download Linux images. When removing the card, please make sure that you release it from the connector by pushing and
 NOT by pulling the card directly (this can damage both the connector and the microSD card).
 
 ## 6.2.1 SD/MMC1 slot
 The schematic related to the SD/MMC1 (microSD connector) is shown below:
 SD/MMC1 slot is the microSD card slot, located on the top of the board.
 This slot is typically used for booting the OS, due to the larger capacities of the microSD cards
-(compared to SD or MMC cards). It is suggested to have an SD card with a proper Linux/Android
-image especially if you have ordered a version of the board without NAND memory. It is also
-recommended to use Class 10 (10MByte/sec) card for faster read/write operations, lower class cards
+(compared to SD or MMC cards). It is suggested to have an SD card with a proper Linux
+image. It is also recommended to use Class 10 (10MByte/sec) card for faster read/write operations, lower class cards
 (especially higher capacity ones) might slow down the whole system.
+
 SD/MMC1 connector
 Pin # Connector signal name Wire name (processor pin)
 1 DAT2/RES SD0-D2 (K19)
@@ -588,16 +536,14 @@ Additionally, there are the WP and CP switches that are responsible, respectivel
 whether the card is locked for reading and whether there is a card inserted.
 
 ## 6.3 PWR jack
-The power jack used is the typical DC barrel jack one used by xxxx  (2.1×6.3×9.2mm) in most of
-our products. More information about the exact component might be found here:
+The power jack used is the typical DC barrel jack one used by xxxx  (2.1×6.3×9.2mm) . More information about the exact component might be found here:
 https://www.xxxx .com/wiki/PWRJACK
 
 You should provide 12 volts direct current and the required current may vary depending on the
 peripherals connected to the board. The power supply you use should be capable of providing at
 least 1A of current.
-Pin # Signal name
-1 Power input
-2 GND
+1 Center pin Power input 
+2 Outer connector GND
 More info about the power supply can be found in chapter 5 of this manual.
 
 ## 6.4 USB_OTG
