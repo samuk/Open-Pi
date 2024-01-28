@@ -1,3 +1,7 @@
+# OSHWA certification
+
+The intention is to get [OSHWA certification](https://certification.oshwa.org/) 
+
 # CE mark
 
 -  2014/30/EU 	EMC 	Electromagnetic compatibility - Applies and will have lab test done
