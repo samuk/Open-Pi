@@ -31,6 +31,7 @@ Attribution: This project will be a derivative of [Johanns carrier board](https:
 -    [Edge AI](https://github.com/huginn/huginn/blob/master/doc/docker/install.md)
 -    [Robotics](https://github.com/linorobot/linorobot2#linorobot2)
 -    [Environmental regulation & control](https://github.com/kizniche/Mycodo#mycodo)
+-    [LLM experimentation](https://www.dfrobot.com/blog-13412.html)
 -    [Network attached mass storage (NAS)](https://www.openmediavault.org/features.html)
 -    [Media Centers](https://osmc.tv/)
 -    [Smart home management](https://www.home-assistant.io/)
