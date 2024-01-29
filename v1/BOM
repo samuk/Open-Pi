@@ -39,14 +39,14 @@ To be completed
 
 | **Designator** | **Comment**              | **Footprint**                             | **Quantity** | **quantity** |
 | -------------- | ------------------------ | ----------------------------------------- | ------------ | ------------ |
-| U3             | LPJG0926HENL             | CONN_LINKPP_LPJG0926HENL                  |              | 1            |
-| L5             | SRN6045TA-3R3Y           | L_Bourns_SRN6045TA                        |              | 1            |
-| J13            | 61400826021              | CONN_WURTH_61400826021                    |              | 1            |
-| J22            | 685119134923             | WURTH_685119134923                        |              | 1            |
-| D4             | MMBZ5242BLT3G            | SOT-23                                    |              | 1            |
-| U12            | RT9742SNGV               | SOT-23                                    |              | 1            |
-| L3             | SRN6045TA-3R3Y           | L_Bourns_SRN6045TA                        |              | 1            |
-| J27            | Conn_01x02               | TE_171825-2                               |              | 1            |
+| U3             | LPJG0926HENL             | CONN_LINKPP_LPJG0926HENL                  | http://www.link-pp.com/?product/201804116137.html            | 1            |
+| L5             | SRN6045TA-3R3Y           | L_Bourns_SRN6045TA                        | https://www.digikey.co.uk/en/products/detail/bourns-inc/SRN6045TA-2R2Y/6155102             | 1            |
+| J13            | 61400826021              | CONN_WURTH_61400826021                    | https://www.digikey.co.uk/en/products/detail/w%C3%BCrth-elektronik/61400826021/2060603             | 1            |
+| J22            | 685119134923             | WURTH_685119134923                        | https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/685119134923?qs=rS3zZhy2AQMawwtKs84uUg%3D%3D             | 1            |
+| D4             | MMBZ5242BLT3G            | SOT-23                                    | https://www.mouser.co.uk/ProductDetail/onsemi/MMBZ5242BLT3G?qs=P4IOph%252Bbot8zm7%252BOlKh6Qw%3D%3D             | 1            |
+| U12            | RT9742SNGV               | SOT-23                                    | https://www.mouser.co.uk/ProductDetail/Richtek/RT9742SNGV?qs=amGC7iS6iy9IuhGfX55LJA%3D%3D             | 1            |
+| L3             | SRN6045TA-3R3Y           | L_Bourns_SRN6045TA                        | https://www.mouser.co.uk/ProductDetail/Bourns/SRN6045TA-3R3Y?qs=Vt59ZOdFuWZ4MyJAxNBCDg%3D%3D             | 1            |
+| J27            | Conn_01x02               | TE_171825-2                               | https://www.mouser.co.uk/ProductDetail/TE-Connectivity-Alcoswitch/171825-2?qs=BQnH65u3HD9lGX0fvAq4oA%3D%3D             | 1            |
 | C18            | 100uF                    | CP_EIA-7343-31_Kemet-D                    |              | 1            |
 | R15            | 12K1%                    | R_0402_1005Metric                         |              | 1            |
 | R20            | 510K1%                   | R_0402_1005Metric                         |              | 1            |
