@@ -8,7 +8,7 @@ Open Pi
 xxx
 
 # 3. Declaration: 
-I here by declare that the Raspberry Pi Compute Module 4 IO Board is in conformity with
+I here by declare that the Open Pi is in conformity with
 the operation, material content and essential health and safety requirements of the
 following legislation:
 
@@ -46,7 +46,7 @@ IEC EN 63000: 2018
 Technical documentation for the assessment of electrical and electronic products
 with respect to the restriction of hazardous substances
 
-# 6. Date of Issue: 17 November, 2022
+# 6. Date of Issue: 6 June, 2024
 U.K. Declaration of Conformity – Open Pi 1DocuSign Envelope ID:xxxxxxxxxxxxxxx
 
 # 7. Place of Issue: 
