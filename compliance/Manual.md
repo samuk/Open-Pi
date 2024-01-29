@@ -111,17 +111,18 @@ USED TO CREATE Open Pi AND Open Pi plus. THEY ARE CONSIDERED SUITABLE ONLY FOR, 
 - 6.0 Introduction to the chapter..................................................................................
 - 6.1 UART0 interface.............................................................................................
 - 6.2 MicroSD card connector.........................................................................................
-- 6.2.1 SD/MMC1 slot.................................................................................................
 - 6.3 PWR jack.......................................................................................................
 - 6.4 USB_OTG........................................................................................................
 - 6.5 USB_HOST connectors.............................................................................................
 - 6.6 Ethernet.......................................................................................................
 - 6.7 HDMI connector.................................................................................................
-- 6.8 M.2 connector and power.......................................................................................
+- 6.8 Real Time Clock.......................................................................................
 - 6.9 General Purpose Input/Output (GPIO) 40pin connector.............................................................
-- 6.10 LCD_CON via 40pin connector....................................................................................
+- 6.10 .M.2 connector and power...................................................................................
 - 6.11 Jumper description.............................................................................................
-- 6.12 Additional hardware components..................................................................................
+- 6.12 DSI display connector ..........................................................................................
+- 6.13 CSI camera connector............................................................................................
+- 6.14 Additional hardware components..................................................................................
 
 ### CHAPTER 7: SCHEMATICS
 - 7.0 Introduction to the chapter.......................................................................................
@@ -148,21 +149,19 @@ customer.
 ## 1.1 Features
 The board has the following set of features:
 - • M.2 connector 
-- • HDMI connector for audio/ display
+- • Full size HDMI2 connector for audio/ display
 - • 2 x USB High-speed host with power control and current limiter
-- • USB-OTG with power control and current limiter
 - • 1000MBit native Ethernet with connector
 - • 40-pin standard Raspberry Pi GPIO header with mounting holes for Micro-HAT
 - • MicroSD card connector
 - • GPIO LED
 - • 12V/ 5V input power supply, noise immune design
-- • Power LED
 - • 4 mount holes
 - • Real Time Clock with 3022 coin cell battery holder
 - • Hardware watchdog
 - • M.2 key M slot
-- • 2-lane CSI camera port
-- • 2-lane DSI display port
+- • 2-lane MIPI CSI-2 camera FPC connectors (22-pin 0.5mm pitch cable
+- • 2-lane MIPI DSI display FPC connectors (22-pin 0.5mm pitch cable)
 - • Micro-USB-B port for RPI-BOOT (i.e. recovery only)
 - • Fan controller & connector
 - • 4-pin “Berg” power connector providing 5V and 12V
@@ -485,8 +484,16 @@ The bottom is unpopulated to reduce manafacturing cost. It includes some test po
 # CHAPTER 4: THE CM4 compatible modules
 
 ## 4. Introduction to the chapter
-In this chapter is located the information about the heart of Open Pi– the available CM4 modules. The
-information is a modified version of the datasheet provided by its manufacturers.
+
+The Raspberry Pi Compute Module 4 datasheet specifications regarding 90/100 Ohm impedance for the differential signals are met. The trace width/spacing specification are:
+
+    171 µm width and 153 µm spacing for 90 Ohm differential pairs
+    139 µm width and 152 µm spacing for 100 Ohm differential pairs
+
+Additionally  50 Ohm are used for all single ended signals (SDIO, I2C and all GPIOs), with a trace width of 185 µm.
+
+The internal WiFi antenna and the connector for the external WiFi antenna are placed near a switching power regulator. Using external antenna connectors is
+recommended if Wifi is required and even with an external antenna performance may be sub-optimal
 
 ## 4.1 The IMX8 processor
 Open hardware CM4 module
@@ -566,26 +573,6 @@ chapter “2.2 Requirements”. Of course, if you already have a large enough mi
 download Linux images. When removing the card, please make sure that you release it from the connector by pushing and
 NOT by pulling the card directly (this can damage both the connector and the microSD card).
 
-## 6.2.1 SD/MMC1 slot
-The schematic related to the SD/MMC1 (microSD connector) is shown below:
-SD/MMC1 slot is the microSD card slot, located on the top of the board.
-This slot is typically used for booting the OS, due to the larger capacities of the microSD cards
-(compared to SD or MMC cards). It is suggested to have an SD card with a proper Linux
-image. It is also recommended to use Class 10 (10MByte/sec) card for faster read/write operations, lower class cards
-(especially higher capacity ones) might slow down the whole system.
-
-SD/MMC1 connector
-Pin # Connector signal name Wire name (processor pin)
-1 DAT2/RES SD0-D2 (K19)
-2 CD/DAT3/CS SD0-D3 (K20)
-3 CMD/DI SD0-CMD (L19)
-4 VDD -
-5 CLK/SCLK SD0-CLK(L20)
-6 VSS2 -
-7 DAT0/DO SD0-D0(M19)
-8 DAT1/RES SD0-D1(M20)
-Additionally, there are the WP and CP switches that are responsible, respectively, for sensing
-whether the card is locked for reading and whether there is a card inserted.
 
 ## 6.3 PWR jack
 The power jack used is the typical DC barrel jack one used by xxxx  (2.1×6.3×9.2mm) . More information about the exact component might be found here:
@@ -599,26 +586,17 @@ least 1A of current.
 More info about the power supply can be found in chapter 5 of this manual.
 
 ## 6.4 USB_OTG
+When a micro USB cable is plugged inthe USB hub is automatically disabled, so the USB 2.0 port becomes a USB device
+
 The main way of changing the firmware image located on the NAND of Open Pi-
-4GB is via the USB-OTG connector – the update of the Android image is explained at the bottom of
-this sub-chapter. The connector can also be used for establishing SSH connection to the default
+4GB is via the USB-OTG connector. The connector can also be used for establishing SSH connection to the default
 Debian Linux of Open Pi boards (for more information about the tethering please refer to “2.5.4 SSH
 via mini USB cable in Debian”). The part of the schematic related to the USB_OTG is shown
 below:
 The USB_OTG features Low Loss Power Distribution Switch SY6280 which protects the board in
 case the devices you have plugged to the USB_OTG attempt to draw more current than 523mA
 combined. The maximum current available on the 5V USB_OTG is exactly 523mA.
-The SY6280 responsible for the USB_OTG is enabled by USB0-DRV (processor pin C12, port B9),
-thus the USB_OTG is also controlled by the same signal.
-Please note that the USB0-DRV (pin C12, port B9) is multiplexed with the I2S_DO1 signal! If you
-are going to use the I2S audio interface then you would probably need to change the position of the
-SMT jumper PB9/PH7_USB which by default connects USB_OTG to the PB9. This operation
-would require cutting between the pads of the default position with a very sharp object and then
-soldering the pads of the other position together. Doing so you would be able to use both the
-USB_OTG (via port PH7 this time) and the I2S interface.
-Additionally, PB9/PH7_GPIO jumper controls which of the two ports (PB9 or PH7) should be lead
-out to pin 9 of GPIO3 connector for easier access. By default this jumper is in PH7_GPIO position
-and PH7 is lead to pin 9 of GPIO3.
+
 USB_OTG connector
 Pin # Signal name Processor pin
 1 +5V_OTG_PWR -
@@ -626,28 +604,14 @@ Pin # Signal name Processor pin
 3 UDP0 N21
 4 USB0-IDDET B5
 5 GND -
-The connector case is also grounded.
-We have configured an Android image with settings suitable for Open Pi. Then using
-PhoenixSuit tools we uploaded the image to the board via the USB OTG. The image is available for
-users to try and tweak the settings. The images can be downloaded from the wiki article at:
-https://www.xxxx .com/wiki/Open Pi.
-The board variant without NAND needs an SD card with bootable OS – Android or Linux. There
-are ready images available for download at the above-linked Open Piwiki article.
-To repair the image on NAND re-upload it following these easy steps:
-1. Install and run PhoenixSuit (can be found in the wiki article of the board).
-2. Go to firmware tab of the program and point to a valid Android image (the latest official one may
-also be downloaded from the wiki article).
-3. Disconnect the power supply and USB cable from the Open Piboard.
-4. Press and hold RECOVERY button, apply power supply 5V, release RECOVERY button.
-5. Connect USB cable to the mini USB connector
-6. You will be asked for drivers for the bootloader. Navigate to the folder where you extracted the
-PhoenixSuit and install the drivers from the respective executables (or manually point the installer
-to the drivers folder in the PhoenixSuit installation path).
-7. PhoenixSuit will detect the board and would ask for the method of writing the image. Choose
-method of writing the image and confirm your wish to write the image.
-8. Wait till upgrade succeeds as shown below:
+
 
 ## 6.5 USB_HOST connectors
+
+On-board USB 2.0 hub. This connects to the CM4 USB 2.0 port.
+Two ports from the hub are connected to a connector. The other two ports are connected to a header; this header can
+be used to provide two extra internal ports.There is an internal current limit switch to provide VBUS to the USB connectors. The current limit is set to approximately 1.2A.
+
 The part of the schematic related to the USB_HOST connectors is listed below:
 There are two USB host connector featured on the board. They are called USB_HOST1 and
 USB_HOST2. Each of them has own connector, both situated near the Ethernet connector. Each of
@@ -740,30 +704,21 @@ Pin # Signal name Processor pin Pin # Signal name Processor pin
 optional.
 
 ## 6.8 M.2 connector and power
+M.2 slot is in general very versatile in that it can offer various electrical interfaces, including SATA, PCIe and USB.
+
 The part of the schematic describing the optional M.2 module is shown below:
 
 
-## 6.9 GPIO connectors
-There are GPIO ports which are used generally to access unused by the board's peripherals
-pins. However, there are exceptions – some of the pins might be used to easily peripherals or their
-levels.
-The the GPIO connector has 40 pins and Note that all GPIO
-connectors have 2.54 step between pins. xxxx  
-
-Most of the pins are already defined in default operating system images. Some of them can be used
-as GPIOs, I2C or SPI without much of a problem. Information on the software usage of GPIO ports
-might be found in chapters “2.7 GPIO under Debian” and “2.8 I2C and SPI under Debian”
+## 6.8 Real Time Clock
+A PCF85063AT RTC is provided. A battery socket is provided for a CR2032 battery. On initial setup, the CLKOUT of the RTC should be disabled to save power.
+The alarm output of the RTC is used to wake CM4 from a previous shutdown. If an alarm goes off during normal operation, the CM4 will be reset; this can be used as a watchdog timer if required.
 
 ## 6.9(General Purpose Input/Output) 40pin connector
-This connector features the processor signals needed for GPIO
+This connector features the processor signals needed for GPIO It is a standard Raspberry Pi 40-way HAT connector. Pi Zero sized Mounting holes are
+also provided so that standard HATs may be used.
 
+## 6.10 M.2 connector and power
 
-xxxxxxxxPI header infoxxxxxx
-
-
-## 6.10 connecting a LCD hat to 40pin connector
-
-See [Adafruit PiTFT](https://www.adafruit.com/product/2423)
 
 ## 6.11 Jumper description
 Please note that most the jumpers on the board are SMT type. If you feel insecure of your
@@ -771,7 +726,13 @@ soldering/cutting technique it is better not to try to adjust the jumpers since 
 the board.
 Board jumpers
 
-## 6.12 Additional hardware components
+#  6.12 DSI display connector
+DSI interface (2-channel) is brought out to a 22-way 0.5mm pitch connector.
+
+# 6.13 CSI-2 camera connector 
+A CSI-2 interface (2-channel) is brought out to a 22-way 0.5mm pitch connector.
+
+## 6.14 Additional hardware components
 The components below are mounted on Open Pib ut are not discussed above. They are listed
 here for completeness:
 Reset button – used to reset the board
