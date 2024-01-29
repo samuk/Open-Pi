@@ -14,6 +14,9 @@
 
 [Enclosure for square display](https://www.shapeways.com/product/LLZUBU7HK/base-for-pimoroni-hyperpixel-and-raspberry-pi)
 
+## Cooling
+[Aluminum cooler](https://geekworm.com/products/cm4-12mm-aluminum-alloy-heatsink-c235)
+
 ## Open hardware hats
 [CANBUS- SG Electronics](https://www.sg-electronic-systems.com/can-bus-dual-base-v2-1-4-shield-for-raspberry/)
 
