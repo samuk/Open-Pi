@@ -62,9 +62,9 @@ To be completed
 | R23            | 12K1%                    | R_0402_1005Metric                         |              | 1            |
 | R26            | 12K1%                    | R_0402_1005Metric                         |              | 1            |
 | C60            | 1.2nF                    | C_0402_1005Metric                         |              | 1            |
-| Y2             | X32K768S300              | Crystal_SMD_3215-2Pin_3.2x1.5mm           |              | 1            |
-| J26            | Molex470531000           | MOLEX_47053-1000                          |              | 1            |
-| MODULE1        | ComputeModule4-CM4-ConnB | Raspberry-Pi-4-Compute-Module-Connector-B |              | 1            |
+| Y2             | X32K768S300              | Crystal_SMD_3215-2Pin_3.2x1.5mm           |https://uk.farnell.com/ael-crystals/x32k768s300/crystal-32-768khz-6pf-3-2-x-1/dp/2467441              | 1            |
+| J26            | Molex470531000           | MOLEX_47053-1000                          |https://www.lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_span-style-background-color-ff0-MOLEX-span-470531000_C240840.html              | 1            |
+| MODULE1        | ComputeModule4-CM4-ConnB | Raspberry-Pi-4-Compute-Module-Connector-B |https://www.lcsc.com/product-detail/Mezzanine-Connectors-Board-to-Board_HRS-Hirose-DF40HC-3-0-100DS-0-4V-51_C424649.html              | 1            |
 | C9             | 27pF                     | C_0402_1005Metric                         |              | 1            |
 | R12            | 36K1%                    | R_0402_1005Metric                         |              | 1            |
 | R28            | 2.2K1%                   | R_0402_1005Metric                         |              | 1            |
@@ -81,4 +81,4 @@ To be completed
 | C45            | 100uF                    | CP_EIA-7343-31_Kemet-D                    |              | 1            |
 | BT1            | Battery_Cell             | KEYSTONE_1070TR                           |              | 1            |
 | R6             | 36K1%                    | R_0402_1005Metric                         |              | 1            |
-| MODULE2        | ComputeModule4-CM4-ConnA | Raspberry-Pi-4-Compute-Module-Connector-A |              | 1            |
+| MODULE2        | ComputeModule4-CM4-ConnA | Raspberry-Pi-4-Compute-Module-Connector-A |https://www.lcsc.com/product-detail/Mezzanine-Connectors-Board-to-Board_HRS-Hirose-DF40HC-3-0-100DS-0-4V-51_C424649.html              | 1            |
