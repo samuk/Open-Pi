@@ -6,7 +6,6 @@ The intention is to get [OSHWA certification](https://certification.oshwa.org/)
 
 See [Declaration of conformity EU](https://github.com/samuk/Open-Pi/blob/main/compliance/DeclarationConformityEU.md)
   
-  [ref](https://ce-marking.help/home#)
 
 # UK declaration of conformity
 
