@@ -12,11 +12,13 @@
 
 <img src="https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/afford.webp" alt="can hat" style="width:400px;"> 
 
+[Enclosure for square display](https://www.shapeways.com/product/LLZUBU7HK/base-for-pimoroni-hyperpixel-and-raspberry-pi)
+
 ## Open hardware hats
 [CANBUS- SG Electronics](https://www.sg-electronic-systems.com/can-bus-dual-base-v2-1-4-shield-for-raspberry/)
 
 ## Other hats
-[Square display](https://shop.pimoroni.com/products/hyperpixel-4-square?variant=30138251444307)
+[Square display](https://shop.pimoroni.com/products/hyperpixel-4-square?variant=30138251444307) 
 
 [CAN/ RS485 hats](https://wiki.kamamilabs.com/index.php/KAmodRPi_CAN_RS485_HAT#Description)
 <img src="https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/can-hat.png" alt="can hat" style="width:400px;"> 
