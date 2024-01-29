@@ -76,10 +76,11 @@ USED TO CREATE Open Pi AND Open Pi plus. THEY ARE CONSIDERED SUITABLE ONLY FOR, 
 - 3.1 Layout (top view)...........................................................................................
 - 3.2 Layout (bottom view)........................................................................................
 
-### CHAPTER 4: THE IMX8+ CM4 compatible modules
+### CHAPTER 4: CM4 compatible modules
 - 4.0 Introduction to the chapter...................................................................................
-- 4.1 The processor................................................................................................
-- 4.2 Block diagram...............................................................................................
+- 4.1 The open hardware iMX8 plus module............................................................................
+- 4.2 The Raspberry Pi CM4..........................................................................................
+- 4.3 Alternative CM4 modules.......................................................................................
 
 ### CHAPTER 5: CONTROL CIRCUITY
 - 5.0 Introduction to the chapter...................................................................................
@@ -127,39 +128,47 @@ customer.
 
 ## 1.1 Features
 The board has the following set of features:
-• M.2 connector 
-• Native HDMI connector
-• 2 x USB High-speed host with power control and current limiter
-• USB-OTG with power control and current limiter
-• 1000MBit native Ethernet with connector
-• 15 GPIOs on tw0 GPIO rows of pins 
-• MicroSD card connector
-• GPIO LED
-• 12V/ 5V input power supply, noise immune design
-• Power LED
-• 4 mount holes
-• PCB dimensions:  ~ (98×98) mm
+- • M.2 connector 
+- • HDMI connector for audio/ display
+- • 2 x USB High-speed host with power control and current limiter
+- • USB-OTG with power control and current limiter
+- • 1000MBit native Ethernet with connector
+- • 40-pin standard Raspberry Pi GPIO header with mounting holes for Micro-HAT
+- • MicroSD card connector
+- • GPIO LED
+- • 12V/ 5V input power supply, noise immune design
+- • Power LED
+- • 4 mount holes
+- • Real Time Clock with 3022 coin cell battery holder
+- • Hardware watchdog
+- • M.2 key M slot
+- • 2-lane CSI camera port
+- • 2-lane DSI display port
+- • Micro-USB-B port for RPI-BOOT (i.e. recovery only)
+- • Fan controller & connector
+- • 4-pin “Berg” power connector providing 5V and 12V
+- • 2-pin power connector providing 3.3V
+- • PCB dimensions:  98×98 mm
 
 ## 1.2 Target market and purpose of the board
 The boards from the Open Pi family are easy to setup and powerful. It is possible to use them in
 almost any application as a host board. They are suitable for embedded programming enthusiasts,
-Linux  gadget fans (they can just use the board as a media center or fully functional
+Linux  gadget fans (for use as a media center or fully functional
 Linux-PC, for instance) and also professionals (since its low cost makes it very good solution for
 application-orientated embedded systems). The main usage of the board is software embedded
-development without the urge of understanding perfectly the hardware.
+development.
 
 The boards are as small as possible while maintaining a remarkable stand-alone functionality. The strong points of these boards are the
-modularity and available processors, the small form factor and the low price-to-productivity ratio.
-Customers have full access to the technical documentation of the board. The software is released
-under General Purpose License and the board is considered open-hardware – all schematics and
+modularity and available processors, the small form factor, large range of compatible enclosures and the low price-to-productivity ratio.
+Customers have full access to the technical documentation of the board. Any software is released
+under MIT License and the board is certified open-hardware – all schematics and
 board design files are available to the customer under the CERN-OHL-P
 
 ## 1.3 Board variants
 There are two major board variants named: Open Pi and Open Pi Plus
 
 ## 1.4 Board version used in the manual
-Revision 0.9 boards and resources were used while writing this document. It is possible that they are
-outdated so it is always recommended to download the latest sources from the GitHub page of the
+Revision 0.9 boards and resources were used while writing this document. It is recommended to download the latest version from the GitHub page of the
 board (https://github.com/samuk/Open-Pi/new/main/compliance/Manual.md).
 
 
@@ -168,7 +177,7 @@ Each section in this document covers a separate topic, organized as follows:
 – Chapter 1 is an overview of the board usage and features
 – Chapter 2 provides a guide for quickly setting up the board and software notes
 – Chapter 3 contains the general board diagram and layout
-– Chapter 4 describes the component that is the heart of the board: the CM4 module
+– Chapter 4 describes the component that is the heart of the board: the CM4 compatible modules
 – Chapter 5 is an explanation of the control circuitry associated with the microcontroller
 – Chapter 6 covers the connector pinout, peripherals and jumper description
 – Chapter 7 provides the schematics and the dimensions of the board
@@ -206,16 +215,16 @@ Recommended – items that is good to have in order to be able to interact with 
 of the features of the board;
 Additional – items that provide access to additional features or expand the features of the board.
 
-Required items:
+#### Required items:
 - A CM4 compatible compute module
-- USB type A to USB mini cable – to connect to a personal computer; used for powering the board
-and uploading 
+- USB type A to USB micro cable – to connect to a personal computer; used for powering the board
+and uploading .
 - Input device – either a mouse/keyboard or touchscreen LCD
 - Output device – either HDMI cable + native HDMI monitor/screen/projector; or USB-SERIAL-
-CABLE-F + personal computer (for Linux and/or Android debugging)
+CABLE-F + personal computer (for debugging)
 - SD card with compatible Linux image .
 
-Recommended items:
+#### Recommended items:
 - External USB hub – to split the USB_HOST mounted on the board; you need that to connect more
 USB devices
 - External power supply unit – 12V DC, 5W required – for optimal power
@@ -231,12 +240,11 @@ It is a very good idea to have a USB-SERIAL-CABLE or similar cable since it allo
 1. Change display output settings for Debian easily
 2. Debug the board via any personal computer even if there are problems with the video output
    
-Some of the above-suggested items can be purchased by xxxx , for instance:
-
+Some of the above-suggested items can be purchased from Olimex.com
 
 ## 2.3 Powering the board
 There are two possible ways of powering Open Pi – via external supply providing
-12V DC at the power jack, from 5V USB port via USB_OTG connector . 
+12V DC at the power jack, or from 5V USB port via USB_OTG connector . 
 
 Note that the board might consume up to 650mA of current at 5V when there
 are no peripherals connected to the USB hosts. Make sure your power supply is able to provide at
@@ -378,8 +386,7 @@ component). If you want to use a LCD display for video output from the Open Pi b
 use the 40 pin header. 
 
 ## 2.7.2 Debian calibration
-The command that allows calibrating in Debian Linux is:
-ts_calibrate
+The command that allows calibrating in Debian Linux is: ts_calibrate
 
 The default Debian setup is made with settings for HDMI 720p/60Hz. If you want to change some
 other LCD, VGA or HDMI resolution then you have to start script file in /root directory.
@@ -428,8 +435,21 @@ Alternatively, you might also use the Python script mentioned in the next chapte
 I2C and SPI are both supported in the latest Debian releases. 
 
 ## 2.10 Software support
-We can suggest some suitable software when the carrier is used with a IMX compute module
+A range of Linux distributions will be suitable for use with this device.
 
+If used with the open hardware iMX8+ module from Lukas Henkel
+These will include
+- [Balena OS](https://github.com/balena-os)
+
+If used with a CM4 module from Raspberry Pi these will include
+- [Raspberry Pi OS](https://www.raspberrypi.com/software/)
+- [Ubuntu](https://ubuntu.com/download/raspberry-pi)
+- [Balena OS](https://github.com/balena-os)
+
+ When using Balena OS or other OS that utilises Docker it may be helpful to run [Portainer](https://docs.portainer.io/start/install-ce/server/docker/linux)  
+
+  Please refer to the appropriate vendor or project for further details on the installation and operation of the software stack.
+  
 # 3. Introduction to the chapter
 Here you get acquainted with the main parts of the board. Note the names used on the board might
 differ from the names used below to describe them. For the actual names check the Open Pi board itself.
@@ -440,7 +460,7 @@ The picture below shows the top side of the board and highlights the most import
 ## 3.2 Layout (bottom view)
 At the bottom are located mainly the buttons and microSD card connector.
 
-# CHAPTER 4: THE IMX8 CM4 compatible modules
+# CHAPTER 4: THE CM4 compatible modules
 
 ## 4. Introduction to the chapter
 In this chapter is located the information about the heart of Open Pi– the available CM4 modules. The
@@ -449,8 +469,11 @@ information is a modified version of the datasheet provided by its manufacturers
 ## 4.1 The IMX8 processor
 The features of the Open Piprocessor according to the manufacturer 
 
-## 4.2 Block diagram
-The block diagram is taken from xxx web-site.
+## 4.2 The Raspberry Pi official modules
+Further information is available here: https://www.raspberrypi.com/products/compute-module-4/?variant=raspberry-pi-cm4001000
+
+## 4.3 Third party CM4 modules
+Some further info is available here https://community.twistedfields.com/t/alternative-cm4-modules/334
 
 # CHAPTER 5: CONTROL CIRCUITY
 
