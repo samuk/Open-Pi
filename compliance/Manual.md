@@ -457,8 +457,11 @@ differ from the names used below to describe them. For the actual names check th
 ## 3.1 Layout (top view)
 The picture below shows the top side of the board and highlights the most important parts:
 
+![layout](https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/open-Pi-v1.svg)
+
 ## 3.2 Layout (bottom view)
-At the bottom are located mainly the buttons and microSD card connector.
+The bottom is unpopulated to reduce manafacturing cost. It includes some test points
+![Layout bottom](https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/open-pi-bottom.svg)
 
 # CHAPTER 4: THE CM4 compatible modules
 
