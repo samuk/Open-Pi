@@ -78,9 +78,10 @@ USED TO CREATE Open Pi AND Open Pi plus. THEY ARE CONSIDERED SUITABLE ONLY FOR, 
 
 ### CHAPTER 4: CM4 compatible modules
 - 4.0 Introduction to the chapter...................................................................................
-- 4.1 The open hardware iMX8 plus module............................................................................
+- 4.1 Open hardware iMX8 plus module............................................................................
 - 4.2 The Raspberry Pi CM4..........................................................................................
-- 4.3 Alternative CM4 modules.......................................................................................
+- 4.3 Open Hardware ULX4M FPGA......................................................................................
+- 4.4 Alternative CM4 modules.......................................................................................
 
 ### CHAPTER 5: CONTROL CIRCUITY
 - 5.0 Introduction to the chapter...................................................................................
@@ -470,13 +471,21 @@ In this chapter is located the information about the heart of Open Pi– the ava
 information is a modified version of the datasheet provided by its manufacturers.
 
 ## 4.1 The IMX8 processor
-The features of the Open Piprocessor according to the manufacturer 
+Open hardware CM4 module
+[https://www.crowdsupply.com/ov-tech-gmbh/pi-mx8-module](https://www.crowdsupply.com/ov-tech-gmbh/pi-mx8-module)
+
 
 ## 4.2 The Raspberry Pi official modules
-Further information is available here: https://www.raspberrypi.com/products/compute-module-4/?variant=raspberry-pi-cm4001000
+Official CM4 module
+[https://www.raspberrypi.com/products/compute-module-4/](https://www.raspberrypi.com/products/compute-module-4/?variant=raspberry-pi-cm4001000)
 
-## 4.3 Third party CM4 modules
-Some further info is available here https://community.twistedfields.com/t/alternative-cm4-modules/334
+## 4.3 ULX4M FPGA
+Open hardware FPGA CM4
+[https://www.crowdsupply.com/intergalaktik/ulx4m/updates/pre-launch-progress](https://www.crowdsupply.com/intergalaktik/ulx4m/updates/pre-launch-progress)
+
+## 4.4 Third party CM4 modules
+List of alternate CM4 modules
+[https://community.twistedfields.com/t/alternative-cm4-modules/](https://community.twistedfields.com/t/alternative-cm4-modules/334)
 
 # CHAPTER 5: CONTROL CIRCUITY
 
