@@ -1,5 +1,23 @@
 # Open Pi open-source single-board Linux mini-computer
 
+
+
+
+
+
+![Open Pi](https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/Engineering-sample.png)
+
+
+
+
+
+
+
+
+
+
+
+
 ## USER’S MANUAL
 
 Revision I, May 2024
