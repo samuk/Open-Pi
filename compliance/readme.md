@@ -4,12 +4,13 @@ The intention is to get [OSHWA certification](https://certification.oshwa.org/)
 
 # CE mark
 
--  2014/30/EU 	EMC 	Electromagnetic compatibility - Applies and will [evaluate](https://www.puwer.co.uk/emf-compliance)
--  2011/65/EU 	ROHS 	Restriction of the use of certain hazardous substances - Applies, complies, Materials statement above
--  2014/35/EU 	LVD 	Low voltage - Does not apply
--  2014/53/EU 	RED 	Radio equipment - Does not apply
+See [Declaration of conformity EU](https://github.com/samuk/Open-Pi/blob/main/compliance/DeclarationConformityEU.md)
   
   [ref](https://ce-marking.help/home#)
+
+# UK declaration of conformity
+
+See [Declaration of conformity UK](https://github.com/samuk/Open-Pi/blob/main/compliance/DeclarationConformityUK.md)
 
 # RoHS II
 
