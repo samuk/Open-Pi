@@ -2,8 +2,13 @@
 Open Pi
 
 ## 1. Product: Open Pi
-## 2. Manufactured by: xxxx
-## 3. EU Authorised Representative: None
+
+## 2. Manufactured by: 
+xxxx
+
+## 3. EU Authorised Representative: 
+None
+
 ## 4. Declaration: I here by declare that the Open Pi Compute Module 4 IO Board is in conformity with
 the operation, material content and essential health and safety requirements of the
 following Union harmonised legislation:
@@ -58,6 +63,7 @@ with respect to the restriction of hazardous substances
 BFP
 
 ## 9. Signature:
+
 xxxNamed person - Rolexxx
 
 E.U. Declaration of Conformity – Open PI 2DocuSign Envelope ID: xxxxxxxx
