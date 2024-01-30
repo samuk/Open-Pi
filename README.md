@@ -26,7 +26,7 @@ Attribution: This project will be a derivative of [Johanns carrier board](https:
 
 # Components
 
-Explore the <a href="https://rosmo-robot.github.io/ibom.html" target="_blank">Bill Of Materials (BOM)</a> 
+Explore the <a href="https://rosmo-robot.github.io/ibom.html" target="blank">Bill Of Materials (BOM)</a> 
 
 # Ideal for various applications, Including:
 
