@@ -18,7 +18,8 @@
 [Aluminum cooler](https://geekworm.com/products/cm4-12mm-aluminum-alloy-heatsink-c235)
 
 ## Open hardware hats
-[CANBUS- SG Electronics](https://www.sg-electronic-systems.com/can-bus-dual-base-v2-1-4-shield-for-raspberry/)
+[Zero CANbus hat](https://oshwlab.com/Remiha/can-bus-auto-rpi-zero)
+[CANbus hat- SG Electronics](https://www.sg-electronic-systems.com/can-bus-dual-base-v2-1-4-shield-for-raspberry/)
 
 ## Other hats
 [Square display](https://shop.pimoroni.com/products/hyperpixel-4-square?variant=30138251444307) 
