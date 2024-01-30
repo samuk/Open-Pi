@@ -23,7 +23,11 @@ Attribution: This project will be a derivative of [Johanns carrier board](https:
    - Fan controller & connector
    - 4-pin “Berg” power connector providing 5V and 12V
    - 2-pin power connector providing 3.3V
-   
+
+# Components
+
+Explore the <a href="https://rosmo-robot.github.io/ibom.html" target="_blank">Bill Of Materials (BOM)</a> 
+
 # Ideal for various applications, Including:
 
 -    [IOT gateway](https://github.com/balena-os)
