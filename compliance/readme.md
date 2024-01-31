@@ -11,6 +11,11 @@ See [Declaration of conformity EU](https://github.com/samuk/Open-Pi/blob/main/co
 
 See [Declaration of conformity UK](https://github.com/samuk/Open-Pi/blob/main/compliance/DeclarationConformityUK.md)
 
+Todo 
+BS EN 55032:2015+A11:2020
+
+BS EN 55035:2017+A11:2020
+
 # RoHS II
 
 xxxxxx certifies that its EEE products including packaging are compliant with the threshold requirements of the European Union restriction on use of Hazardous Substances Directive 2011/65/EU (“ROHS2”) and its amendments including Directive (EU) 2015/863 to amend Annex II of EU RoHS 2 to add four phthalates. xxxxxx RoHS compliance is controlled under EN50581:2012 Standard.
