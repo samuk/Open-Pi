@@ -11,10 +11,6 @@ See [Declaration of conformity EU](https://github.com/samuk/Open-Pi/blob/main/co
 
 See [Declaration of conformity UK](https://github.com/samuk/Open-Pi/blob/main/compliance/DeclarationConformityUK.md)
 
-Todo 
-BS EN 55032:2015+A11:2020
-
-BS EN 55035:2017+A11:2020
 
 # RoHS II
 
@@ -38,6 +34,21 @@ xxxxxx products are compliant with Conflict Mineral Rules law according to the l
 xxxxxx is committed to a safe and healthy environment and has been working diligently to ensure its compliance with WEEE legislation. xxxxxx and all products sold by xxxxxx will comply with WEEE legislation.
 
 [WEEE statement](https://github.com/samuk/Open-Pi/blob/main/compliance/WEEE.md)
+
+# Testing 
+
+Any testing carried out is likely to include
+
+- Radiated Emissions
+- Electro Static Discharge Test
+- Power Frequency Magnetic Field Immunity
+- Radiated Electromagnetic Field Immunity
+- Conducted Disturbances Induced by Electromagnet Fields
+
+Regarding
+- BS EN 55032:2015+A11:2020
+- BS EN 55035:2017+A11:2020
+
 
 
 
