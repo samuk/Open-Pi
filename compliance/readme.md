@@ -45,9 +45,7 @@ Any testing carried out is likely to include
 - Radiated Electromagnetic Field Immunity
 - Conducted Disturbances Induced by Electromagnet Fields
 
-Regarding
-- BS EN 55032:2015+A11:2020
-- BS EN 55035:2017+A11:2020
+
 
 
 
