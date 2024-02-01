@@ -41,9 +41,8 @@ EN 55032:2015 + A11:2020
 Electromagnetic compatibility of multimedia equipment - Emission Requirements
 
 ### 6.2. Immunity
-EN 55024:2010
-Information technology equipment - Immunity characteristics - Limits and
-methods of measurement
+BS EN 55035:2017+A11:2020
+Electromagnetic compatibility of multimedia equipment - Immunity requirements
 E.U. Declaration of Conformity – Open Pi 1DocuSign Envelope ID: xxxxxxxxxx
 
 ### 6.3. Disturbance
