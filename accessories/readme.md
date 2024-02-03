@@ -15,10 +15,16 @@
 [Enclosure for square display](https://www.shapeways.com/product/LLZUBU7HK/base-for-pimoroni-hyperpixel-and-raspberry-pi)
 
 ## Cooling
+
+[Passive cooling](
+
 [Aluminum cooler](https://geekworm.com/products/cm4-12mm-aluminum-alloy-heatsink-c235)
 
 ## Open hardware hats
 [Zero CANbus hat](https://oshwlab.com/Remiha/can-bus-auto-rpi-zero)
+
+[Mikrobus/ Qwiic connector](https://www.tindie.com/products/bokra/rpi-to-mikrobustm/) for [Shuttle](https://www.mikroe.com/mikrobus-shuttle) & [1632 click boards](https://www.mikroe.com/click)
+
 [CANbus hat- SG Electronics](https://www.sg-electronic-systems.com/can-bus-dual-base-v2-1-4-shield-for-raspberry/)
 
 ## Other hats
