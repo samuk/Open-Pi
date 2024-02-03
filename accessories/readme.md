@@ -21,11 +21,17 @@
 [Aluminum cooler](https://geekworm.com/products/cm4-12mm-aluminum-alloy-heatsink-c235)
 
 ## Open hardware hats
-[Zero CANbus hat](https://oshwlab.com/Remiha/can-bus-auto-rpi-zero)
+[CANbus hat](https://oshwlab.com/Remiha/can-bus-auto-rpi-zero)
 
 [Mikrobus/ Qwiic connector](https://www.tindie.com/products/bokra/rpi-to-mikrobustm/) for [Shuttle](https://www.mikroe.com/mikrobus-shuttle) & [1632 click boards](https://www.mikroe.com/click)
 
 [CANbus hat- SG Electronics](https://www.sg-electronic-systems.com/can-bus-dual-base-v2-1-4-shield-for-raspberry/)
+
+[I/O expansion](https://learn.adafruit.com/gpio-expander-bonnet/overview)
+
+[Oled](https://www.adafruit.com/product/3531#description)
+
+[Voice & others](https://www.adafruit.com/category/929)
 
 ## Other hats
 [Square display](https://shop.pimoroni.com/products/hyperpixel-4-square?variant=30138251444307) 
