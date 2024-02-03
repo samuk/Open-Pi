@@ -16,7 +16,7 @@
 
 ## Cooling
 
-[Passive cooling](
+[Passive cooling](https://dickson.industries/)
 
 [Aluminum cooler](https://geekworm.com/products/cm4-12mm-aluminum-alloy-heatsink-c235)
 
