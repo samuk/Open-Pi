@@ -31,6 +31,8 @@
 
 [Oled](https://www.adafruit.com/product/3531#description)
 
+[LoRaWAN gateway](https://www.tindie.com/products/m2m/diy-kit-pcb-rak833-raspberry-hat-lorawan-gateway/)
+
 [Voice & others](https://www.adafruit.com/category/929)
 
 ## Other hats
