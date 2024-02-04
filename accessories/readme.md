@@ -33,6 +33,8 @@
 
 [LoRaWAN gateway](https://www.tindie.com/products/m2m/diy-kit-pcb-rak833-raspberry-hat-lorawan-gateway/)
 
+[FPGA](https://shop.trenz-electronic.de/en/TE0876-02-A-IceZero-with-Lattice-ICE40HX-4-Mbit-external-SRAM-3.05-x-6.5-cm)
+
 [Voice & others](https://www.adafruit.com/category/929)
 
 ## Other hats
