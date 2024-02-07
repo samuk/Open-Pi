@@ -41,4 +41,3 @@
 [Square display](https://shop.pimoroni.com/products/hyperpixel-4-square?variant=30138251444307) 
 
 [CAN/ RS485 hats](https://wiki.kamamilabs.com/index.php/KAmodRPi_CAN_RS485_HAT#Description)
-<img src="https://raw.githubusercontent.com/samuk/Open-Pi/main/v1/images/can-hat.png" alt="can hat" style="width:400px;"> 
