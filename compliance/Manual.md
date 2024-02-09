@@ -318,8 +318,8 @@ Using HDMI, or LAN might require additional configurations. Furthermore, it is
 possible to corrupt the output settings over those interfaces and, thus, lose the output.
 
 ## 2.5.1 Serial connection at UART0
-The default and recommended way to communicate with the board is using the serial connection
-available at UART0 pins on the 40pin header. You would probably need an USB<->SERIAL cable for such a
+You can communicate with the board is using the serial connection
+available at UART0 pins on the 40pin header. You will need an USB<->SERIAL cable for such a
 connection. Even if you intend to use HDMI or LCD it is a good idea to have it as a basis – the
 video output is not always reliable and if you set wrong display settings you would be unable to
 recover the software without an alternative connection.
@@ -342,13 +342,13 @@ After everything else is set, you would need to power the board as explained in 
 board”.
 
 ## 2.5.2 HDMI monitor
-Most Linux images suitable for  Open Pi have HDMI output enabled by
+Most desktop Linux images suitable for Open Pi have HDMI output enabled by
 default. The board would work out-of-the-box with a native HDMI monitor.
 Make sure to use a tested HMDI cable.
 The default HDMI resolution in the official images is 720p60 (1280×720p at 60Hz). In order to
 change that setting the video output on the LCD display you would need to run a configuration
 script (if you use  Linux)
-More information about the video output settings and the usage of video settings script might be
+More information about the video output settings and the usage of video settings script can be
 found in chapter “2.6 Changing the default image resolution”.
 
 ## 2.5.3 LCD display
@@ -360,7 +360,7 @@ other connection options available as back-up (in case the video output settings
 For more information refer to chapter “2.7 Connecting and calibrating a display”.
 
 ## 2.5.4 SSH via mini USB cable in Debian
-The latest official Linux images allow the use the USB_OTG connector for SSH connection
+Many Linux images allow the use the USB_OTG connector for SSH connection
 without the need of a LAN cable or a serial cable. You can use a mini USB cable connected
 between your host PC and the on-board mini USB connector. For connection convenience there is a
 DHCP server running specifically for USB0 interface. The DHCP server should give IP address to
@@ -377,7 +377,7 @@ respective files and articles provided by Microsoft on how to install the requir
 ## 2.5.5 SSH via Ethernet connector
 SSH protocol allows you to login remotely to the command-line interface of the 
 Open Pi board. You would need an active Ethernet connection to the board.
-The newest images have a configuration that allows SSH via the Ethernet connector. The static IP
+Please check your operating system documentation to make sure you have a configuration that allows SSH via the Ethernet connector. The static IP
 address to access the board is 192.168.1.254
 
 ## 2.6 Changing the default image resolution
@@ -466,7 +466,7 @@ If used with a CM4 module from Raspberry Pi these will include
 
  When using Balena OS or other OS that utilises Docker it may be helpful to run [Portainer](https://docs.portainer.io/start/install-ce/server/docker/linux)  
 
-  Please refer to the appropriate vendor or project for further details on the installation and operation of the software stack.
+ Please refer to the appropriate vendor or project for further details on the installation and operation of the software stack.
   
 # 3. Introduction to the chapter
 Here you get acquainted with the main parts of the board. Note the names used on the board might
@@ -499,7 +499,6 @@ recommended if Wifi is required and even with an external antenna performance ma
 Open hardware CM4 module
 [https://www.crowdsupply.com/ov-tech-gmbh/pi-mx8-module](https://www.crowdsupply.com/ov-tech-gmbh/pi-mx8-module)
 
-
 ## 4.2 The Raspberry Pi official modules
 Official CM4 module
 [https://www.raspberrypi.com/products/compute-module-4/](https://www.raspberrypi.com/products/compute-module-4/?variant=raspberry-pi-cm4001000)
@@ -529,7 +528,7 @@ power supply might lead to software corruption of the operating system of choice
 24 MHz quartz crystal Q3 is found at pins N22 and N23 of the CM4 compatible modules.
 
 ## 5.3 Power supply circuit
-The power supply is handled mainly by xxxx power management system, an Allwinner chip that
+The power supply is handled mainly by xxxx power management system, an xxx chip that
 goes together with the Open Pi CM4 processor. 
 
 The power supply circuit of Open Pi requires input supply of 12V or 5V. The minimum
@@ -686,8 +685,8 @@ Left Yellow Activity status
 ## 6.7 HDMI connector
 The part of the schematic that describes the HDMI module is shown below:
 Note that there are different Linux images depending whether the HDMI TV works at 50Hz or
-60Hz refresh rate. If you board runs Android there is a specific option to set the appropriate HDMI
-output.
+60Hz refresh rate.
+
 HDMI connector
 Pin # Signal name Processor pin Pin # Signal name Processor pin
 1 HTX2P T23 11 GND -
@@ -706,7 +705,7 @@ optional.
 ## 6.8 M.2 connector and power
 M.2 slot is in general very versatile in that it can offer various electrical interfaces, including SATA, PCIe and USB.
 
-The part of the schematic describing the optional M.2 module is shown below:
+The part of the schematic describing the M.2 module is shown below:
 
 
 ## 6.8 Real Time Clock
@@ -752,18 +751,14 @@ CHGLED – lights when charging a battery connected to the Li-Po battery connect
 # CHAPTER 7: SCHEMATICS
 
 ## 7. Introduction to the chapter
-In this chapter is located information about the schematics describing logically and physically A20-
-OLinuXino-Open Pi.
+In this chapter is located information about the schematics describing logically and physically Open Pi.
 
 ## 7.1 Kicad schematic
 Open Pis chematics may be found it on the OLinuXino's GitHub repository:
 https://github.com/xxxx /OLINUXINO/tree/master/HARDWARE. You can download the whole
 repository as .zip without having a GitHub account.
 
-Please note that the schematics of Open Pi and Raspberry Pi foundations official carrier board are similar and
-it is possible that a single board file and schematic for both boards exist.
-
-We mostly use Kicad for designing. However, the files should be compatible
+We mostly use Kicad for designing. The files should be compatible
 with the latest Kicad available. 
 
 If you are looking for a schematic of an older revision of the board and it 
@@ -772,6 +767,8 @@ isn't available at our web site you may request it by the support e-mail.
 
 ## 7.2 Physical dimensions
 Note that all dimensions are in mm
+
+98mm x 98mm
 
 # CHAPTER 8: REVISION HISTORY AND SUPPORT
 ## 8. Introduction to the chapter
