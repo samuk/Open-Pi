@@ -148,25 +148,25 @@ customer.
 
 ## 1.1 Features
 The board has the following set of features:
-- • M.2 connector 
-- • Full size HDMI2 connector for audio/ display
-- • 2 x USB High-speed host with power control and current limiter
-- • 1000MBit native Ethernet with connector
-- • 40-pin standard Raspberry Pi GPIO header with mounting holes for Micro-HAT
-- • MicroSD card connector
-- • GPIO LED
-- • 12V/ 5V input power supply, noise immune design
-- • 4 mount holes
-- • Real Time Clock with 3022 coin cell battery holder
-- • Hardware watchdog
-- • M.2 key M slot
-- • 2-lane MIPI CSI-2 camera FPC connectors (22-pin 0.5mm pitch cable
-- • 2-lane MIPI DSI display FPC connectors (22-pin 0.5mm pitch cable)
-- • Micro-USB-B port for RPI-BOOT (i.e. recovery only)
-- • Fan controller & connector
-- • 4-pin “Berg” power connector providing 5V and 12V
-- • 2-pin power connector providing 3.3V
-- • PCB dimensions:  98×98 mm
+-  M.2 connector 
+-  Full size HDMI2 connector for audio/ display
+-  2 x USB High-speed host with power control and current limiter
+-  1000MBit native Ethernet with connector
+-  40-pin standard Raspberry Pi GPIO header with mounting holes for Micro-HAT
+-  MicroSD card connector
+-  GPIO LED
+-  12V/ 5V input power supply, noise immune design
+-  4 mount holes
+-  Real Time Clock with 3022 coin cell battery holder
+-  Hardware watchdog
+-  M.2 key M slot
+-  2-lane MIPI CSI-2 camera FPC connectors (22-pin 0.5mm pitch cable
+-  2-lane MIPI DSI display FPC connectors (22-pin 0.5mm pitch cable)
+-  Micro-USB-B port for RPI-BOOT (i.e. recovery only)
+-  Fan controller & connector
+-  4-pin “Berg” power connector providing 5V and 12V
+-  2-pin power connector providing 3.3V
+-  PCB dimensions:  98×98 mm
 
 ## 1.2 Target market and purpose of the board
 The boards from the Open Pi family are easy to setup and powerful. It is possible to use them in
@@ -174,7 +174,7 @@ almost any application as a host board. They are suitable for embedded programmi
 Linux  gadget fans (for use as a media center or fully functional
 Linux-PC, for instance) and also professionals (since its low cost makes it very good solution for
 application-orientated embedded systems). The main usage of the board is software embedded
-development.
+development or commercial control and monitoring systems.
 
 The boards are as small as possible while maintaining a remarkable stand-alone functionality. The strong points of these boards are the
 modularity and available processors, the small form factor, large range of compatible enclosures and the low price-to-productivity ratio.
@@ -192,14 +192,14 @@ board (https://github.com/samuk/Open-Pi/new/main/compliance/Manual.md).
 
 ## 1.5 Document organization
 Each section in this document covers a separate topic, organized as follows:
-– Chapter 1 is an overview of the board usage and features
-– Chapter 2 provides a guide for quickly setting up the board and software notes
-– Chapter 3 contains the general board diagram and layout
-– Chapter 4 describes the component that is the heart of the board: the CM4 compatible modules
-– Chapter 5 is an explanation of the control circuitry associated with the microcontroller
-– Chapter 6 covers the connector pinout, peripherals and jumper description
-– Chapter 7 provides the schematics and the dimensions of the board
-– Chapter 8 contains the revision history, useful links and support information
+ – Chapter 1 is an overview of the board usage and features
+ – Chapter 2 provides a guide for quickly setting up the board and software notes
+ – Chapter 3 contains the general board diagram and layout
+ – Chapter 4 describes the component that is the heart of the board: the CM4 compatible modules
+ – Chapter 5 is an explanation of the control circuitry associated with the microcontroller
+ – Chapter 6 covers the connector pinout, peripherals and jumper description
+ – Chapter 7 provides the schematics and the dimensions of the board
+ – Chapter 8 contains the revision history, useful links and support information
 
 # CHAPTER 2: SETTING UP THE Open Pi BOARD
 
@@ -234,7 +234,7 @@ of the features of the board;
 Additional – items that provide access to additional features or expand the features of the board.
 
 #### Required items:
-- A CM4 compatible compute module
+- A CM4 compatible compute module. The open hardware iMX8 module is recommended, but use of other modules such as the official Raspberry Pi CM4 or CM5 boards is also possible.
 - USB type A to USB micro cable – to connect to a personal computer; used for powering the board
 and uploading .
 - Input device – either a mouse/keyboard or touchscreen LCD
